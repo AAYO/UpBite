@@ -3,7 +3,7 @@ var m = require('mithril');
 var express = require('express');
 var app = express();
 
-var Router = require('./Client/Router')
+var Router = require('./src/Client/Router')
 
 app.use(express.static('.'));
 
