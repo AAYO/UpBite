@@ -7,7 +7,7 @@ HeadDefaults.controller = function(elements){}
 
 HeadDefaults.view = function(defaults, insertions){
 	return [
-		m('script', {src:"bundle.js", type:"application/javascript"})
+		m('script', {src:"./dist/bundle.js", type:"application/javascript"})
 	]
 }
 
