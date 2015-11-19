@@ -13,7 +13,7 @@ const sassLoaders = [
 
 const config = {
   	entry: {
-		app: ['./Client/Mount.js']
+		app: ['Client/Mount.js']
   	},
   	module: {
 		loaders: [
@@ -40,10 +40,11 @@ const config = {
 	 //  		browsers: ['last 2 versions']
 		// })
   // 	],
-  // 	resolve: {
+  	resolve: {
+  		root: path.resolve('./src/')
 		// extensions: ['', '.js', '.sass'],
 		// modulesDirectories: ['src', 'node_modules']
-  // 	}
+  	}
 }
 
 
