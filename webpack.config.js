@@ -29,7 +29,7 @@ const config = {
   	},
 	output: {
 		path: __dirname,
-        filename: "bundle.js"
+        filename: "./dist/bundle.js"
   	},
   	plugins: [
 		// new ExtractTextPlugin('[name].css'),
