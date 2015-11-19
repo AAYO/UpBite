@@ -1,6 +1,6 @@
 {
   "name": "UpBite-Client-Service",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "autoprefixer": "^6.1.0",
@@ -16,7 +16,4 @@
     "webpack": "^1.12.6"
   },
   "devDependencies": {},
-  "config": {
-    "unsafe-perm": true
-  }
 }
