@@ -1,8 +1,6 @@
 var m = require('mithril')
 
-// require('./Modal.sass')
-if(typeof BROWSER !== 'undefined') require('./Modal.css')
-
+require('./Modal.sass')
 
 
 var ModalItem = {}
@@ -10,27 +8,21 @@ var ModalItem = {}
 ModalItem.view = function(template){
 	return m('div.modal-backdrop', [
 		m('div.modal-alignment-vertical', [
-			m('div.modal-alignment-horizontal')
+			m('div.modal-alignment-horizontal', 'foo')
 		])
 	])
 }
 
 
-
 var Modal = {}
 
-//controller
 Modal.controller = function() {};
 
-//view
-Modal.view = function(ctrl) {
+Modal.view = function(scope) {
     return [
        	m.component(ModalItem)
     ]
 };
-
-
-
 
 
 module.exports = Modal
