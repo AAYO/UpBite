@@ -80,7 +80,12 @@ const server = {
         // extensions: ['', '.js', '.sass'],
         // modulesDirectories: ['src', 'node_modules']
     },
-    target: 'node'
+    target: 'node',
+    plugins:[
+      new webpack.ProvidePlugin({
+          'window': 'xmlhttprequest'
+      })
+    ]
 }
 
 module.exports = [client, server]

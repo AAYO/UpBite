@@ -8,17 +8,18 @@
     "domready": "^1.0.7",
     "express": "^4.13.3",
     "extract-text-webpack-plugin": "^0.9.1",
-    "lodash": "^2.4.1",
+    "lodash": "^3.10.1",
     "mithril": "^0.2.0",
     "mithril-node-render": "^0.4.1",
     "node-sass": "^3.4.2",
     "postcss-loader": "^0.8.0",
     "sass-loader": "^3.1.1",
     "style-loader": "^0.13.0",
-    "webpack": "^1.12.6"
+    "webpack": "^1.12.6",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {},
   "scripts": {
-    "server": "NODE_PATH=./src node src/Server"
+    "start": "node dist/server.bundle.js"
   }
 }
