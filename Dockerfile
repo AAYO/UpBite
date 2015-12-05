@@ -21,4 +21,4 @@ COPY . /app
 RUN cd /app && \
     webpack
 
-CMD npm start
+CMD cd /app && npm start
